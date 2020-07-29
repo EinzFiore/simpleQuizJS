@@ -17,7 +17,7 @@
 
 <body>
     <!-- landing -->
-    <section class="quiz">
+    <section id="quiz" class="quiz">
         <div class="container">
             <div class="help">
                 <img src="./src/img/anime/help.png" class="img-fluid mt-4" alt="">
@@ -36,26 +36,26 @@
                 </div>
                 <div class="answer mt-3">
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="answer" id="answer1">
+                        <input class="form-check-input" type="radio" value="Tsundere" name="answer1" id="answer">
                         <label class="form-check-label" for="answer1">
                             Tsundere
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="answer" id="answer2" checked>
-                        <label class="form-check-label" for="answer2">
+                        <input class="form-check-input" type="radio" name="answer1" id="answer">
+                        <label class="form-check-label" for="answer1">
                             Yandere
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="answer" id="answer2" checked>
-                        <label class="form-check-label" for="answer2">
+                        <input class="form-check-input" type="radio" name="answer1" id="answer">
+                        <label class="form-check-label" for="answer1">
                             Kuudere
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="answer" id="answer2" checked>
-                        <label class="form-check-label" for="answer2">
+                        <input class="form-check-input" type="radio" name="answer1" id="answer">
+                        <label class="form-check-label" for="answer1">
                             Yareyare
                         </label>
                     </div>
@@ -72,25 +72,25 @@
                 </div>
                 <div class="answer mt-3">
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="answer" id="answer1">
-                        <label class="form-check-label" for="answer1">
+                        <input class="form-check-input" type="radio" name="answer2" id="answer2">
+                        <label class="form-check-label" for="answer2">
                             No Game No Life
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="answer" id="answer2" checked>
+                        <input class="form-check-input" type="radio" name="answer2" id="answer2">
                         <label class="form-check-label" for="answer2">
                             Kimetsu no Yaiba
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="answer" id="answer2" checked>
+                        <input class="form-check-input" type="radio" value="SAO" name="answer2" id="answer2">
                         <label class="form-check-label" for="answer2">
                             Sword Art Online
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="answer" id="answer2" checked>
+                        <input class="form-check-input" type="radio" name="answer2" id="answer2">
                         <label class="form-check-label" for="answer2">
                             Re:Zero
                         </label>
@@ -108,32 +108,42 @@
                 </div>
                 <div class="answer mt-3">
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="answer" id="answer1">
-                        <label class="form-check-label" for="answer1">
+                        <input class="form-check-input" type="radio" name="answer3" id="answer">
+                        <label class="form-check-label" for="answer3">
                             Tsundere
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="answer" id="answer2" checked>
-                        <label class="form-check-label" for="answer2">
+                        <input class="form-check-input" type="radio" name="answer3" id="answer">
+                        <label class="form-check-label" for="answer3">
                             Yandere
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="answer" id="answer2" checked>
-                        <label class="form-check-label" for="answer2">
+                        <input class="form-check-input" type="radio" value="Kuudere" name="answer3" id="answer">
+                        <label class="form-check-label" for="answer3">
                             Kuudere
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="answer" id="answer2" checked>
-                        <label class="form-check-label" for="answer2">
+                        <input class="form-check-input" type="radio" name="answer3" id="answer">
+                        <label class="form-check-label" for="answer3">
                             Yareyare
                         </label>
                     </div>
                 </div>
-                <input type="submit" class="btn btn-primary px-4 mt-2" value="Finish">
+                <input type="button" id="button" class="finish btn btn-primary px-4 mt-2" onclick="check();"
+                    value="Finish">
             </form>
+            <div id="showResult" class="mt-4">
+                <div class="card">
+                    <div class="card-body bg-light text-dark">
+                        <p class="lead display-6" id="messages"></p>
+                        <p id="number_correct"></p>
+                        <img id="picture" class="img-fluid">
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -147,6 +157,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
         integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous">
     </script>
+    <script src="./src/js/app.js"></script>
 </body>
 
 </html>
