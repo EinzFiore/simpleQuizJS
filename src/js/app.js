@@ -33,7 +33,7 @@ function check() {
     document.getElementById('showResult').style.visibility = "visible";
 
     document.getElementById('messages').innerHTML = messages[range];
-    document.getElementById('number_correct').innerHTML = 'Jawaban kamu ' + result + ' benar.';
+    document.getElementById('number_correct').innerHTML = 'Jawaban kamu benar ' + result + '.';
     document.getElementById('picture').src = picture[range];
 
 }
