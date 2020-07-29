@@ -1,0 +1,53 @@
+body {
+  background-color: #0abde3;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+img.img-landing {
+  display: none;
+}
+
+section.landing {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-size: cover;
+}
+
+img.wave {
+  display: none;
+}
+
+.landing h1 {
+  font-family: "Abel", sans-serif;
+  font-size: 70px;
+  text-align: center;
+  color: #f1f2f6;
+}
+
+@media (min-width: 768px) {
+  img.img-landing {
+    display: block;
+    width: 70%;
+  }
+
+  .soal .card {
+    width: 50rem;
+  }
+
+  img.wave {
+    display: block;
+  }
+
+  .landing h1 {
+    font-family: "Abel", sans-serif;
+    font-size: 100px;
+    text-align: left;
+    color: #f1f2f6;
+  }
+  .landing p {
+    font-size: 30px;
+  }
+}
